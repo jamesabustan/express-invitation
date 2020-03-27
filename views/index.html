@@ -10,29 +10,35 @@
 <body>
 
 <div class = "container">
-    <form>
+    <form
+        id= "form"
+        action="http://localhost:8080/express-form"
+        method="POST"
+    >
         <p>Hey there!</p>
         <label>Please enter your name</label> 
         <input type="text" name="name" id="name"><br>
+
         <p>Please choose your event</p>
         <p>Event:</p>
         <label for="wedding">Wedding</label>
-        <input type="radio" name="event" id="wedding" value="wedding" checked> <br>
+        <input type="radio" name="event1" id="wedding" value="wedding" checked> <br>
         <label for="birthday">Birthday</label>
-        <input type="radio" name="event" id="birthday" value="birthday" checked> <br>
+        <input type="radio" name="event1" id="birthday" value="birthday" checked> <br>
         <label for="baptism">Baptism</label>
-        <input type="radio" name="event" id="baptism" value="baptism" checked> <br>
+        <input type="radio" name="event1" id="baptism" value="baptism" checked> <br>
+
         <label for="message" class="messageBox">Message</label>
         <textarea id="message" name="message"></textarea><br>
         
         <input id="submitBtn" type="submit" value="submit">
     </form>
 
-    <div class="card" style="display: none;">
+    <!-- <div class="card" style="display: none;">
         <p>Hello, <span id="nameInput"></span></p>   
         <p>See you at the <span id="eventInput"></span></p>
         <p id="messageInput"></p>
-    </div>
+    </div> -->
 </div> 
 
 

@@ -4,6 +4,7 @@
   "description": "express-invitation",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "mocha"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jamesabustan/express-invitation/issues"
   },
-  "homepage": "https://github.com/jamesabustan/express-invitation#readme"
+  "homepage": "https://github.com/jamesabustan/express-invitation#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
