@@ -1,0 +1,19 @@
+{
+  "name": "express-invitation",
+  "version": "1.0.0",
+  "description": "express-invitation",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesabustan/express-invitation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesabustan/express-invitation/issues"
+  },
+  "homepage": "https://github.com/jamesabustan/express-invitation#readme"
+}
