@@ -1,25 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;;
+}
 body {
-    font-family: 'Exo 2', sans-serif;
-
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    background-image: url("https://source.unsplash.com/random");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container {
     width: 500px;
-    margin: 0 auto;
+    margin: auto;
     padding: 60px;
-
 }
 
-p {
-    font-size: 20px;
-    
-}
 
 .card,
 form {
-    background-color: bisque;
+    background-color: black;
+    background: rgba(0,0,0,0.5);
     padding: 30px;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    font-size: 1rem;
 }
+
 
 .messageBox{
     margin: 20px 0px;

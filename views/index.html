@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
     <title>Express Invitation</title>
 </head>
 <body>
 
+<nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">RSVP Form Express</a>
+ </nav>
+
 <div class = "container">
+
+    <div class="justify-content-center mt-4">
     <form
         id= "form"
         action="http://localhost:8080/express-form"
         method="POST"
     >
-        <p>Hey there!</p>
+        <p>Welcome</p>
         <label>Please insert your name</label> 
         <input type="text" name="name" id="name"><br>
 
@@ -31,14 +38,9 @@
         <label for="message" class="messageBox">Message</label>
         <textarea id="message" name="message"></textarea><br>
         
-        <input id="submitBtn" type="submit" value="submit">
+        <input id="submitBtn" class="btn btn-light btn-sm" type="submit" value="submit">
     </form>
-
-    <!-- <div class="card" style="display: none;">
-        <p>Hello, <span id="nameInput"></span></p>   
-        <p>See you at the <span id="eventInput"></span></p>
-        <p id="messageInput"></p>
-    </div> -->
+    </div>
 </div> 
 
 

@@ -1,6 +1,6 @@
 # Express-invitation
 
-### Project Brief / Requirements
+### Project Brief / Strict : Requirements
 * serve a page 
 * Initial form to be styled using CSS
 * On submission form should be posted to /express-form route
@@ -10,13 +10,14 @@
 ### Tech requirements 
 * HTML + CSS
 * Node Express
+* Bootstrap
 
 ### What I/we have learned
 * Learn and implement node express
+* Implement a CSS framework - Bootstrap
 * Created our own server which served our invitation form
 * Created route for our invitation output the data
 * Implemented organised file/ folder structure
-
 
 ### What challenges I/we overcame
 * Taking input data and passing through the routes
