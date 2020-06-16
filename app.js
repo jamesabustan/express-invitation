@@ -1,17 +1,15 @@
 // Const declared //
 
-const express = require("express"); // we need to acquire module and assign as variable
-const app = express(); // calls express()as function to EXECUTE the modules
+const express = require("express"); 
+const app = express(); 
 const PORT =  process.env.PORT || 8080; 
 
-// Declared //
 
 app.use(express.urlencoded({extended: false})); // do it ahead of time
 app.use(express.static('public')); // make server aware and use of public and views directory
 app.use(express.static('views'));  // pre-programmed to located in the location 
 
-//.post() need a route functionality 
-// next = .then 
+
 app.post("/express-form", (req, res, next) => {
     let receivedText = req.body.name;
     let receivedMessage = req.body.message;
@@ -22,9 +20,11 @@ app.post("/express-form", (req, res, next) => {
         let finalMessage = receivedMessage
         let finalEvent = receivedEvent
 
-    res.send(`<h1>Hello there, ${final}. </h1> <br>
+    res.send(`
+    <h1>Hello there, ${final}. </h1> <br>
      <h3>Can't wait to see you at the ${finalEvent}</h3> <br>
-     <p>Here's your message :${finalMessage}</p>`); 
+     <p>Here's your message :${finalMessage}</p>`
+     ); 
     }
 }); 
 
